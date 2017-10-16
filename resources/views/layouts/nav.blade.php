@@ -13,7 +13,7 @@
                 <!-- Logo -->
                 <div class="navbar-logo">
                     <a class="navbar-logo-wrap smooth-scroll" href="<?php echo Config::get('URL'); ?>">
-                        <h2><?php echo Config::get('SITE_NAME'); ?></h2> 
+                        <h2>{{ config('app.name') }}</h2> 
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse nav-collapse">
                 <div class="menu-container">
                     <ul class="navbar-nav navbar-nav-right">
-
+                        @guest
                         <!-- Work -->
                         <li class="nav-item">
                             <a class="nav-item-child smooth-scroll" href="#work-container">
@@ -64,7 +64,22 @@
                             </a>
                         </li>
                         <!-- End Contact -->
+                        @else
 
+                            <li class="nav-item">
+                                <a class="nav-item-child smooth-scroll" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                          @endguest
+
+                        </ul>
                     </ul>
                 </div>
             </div>

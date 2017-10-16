@@ -56,19 +56,33 @@
                 <form method="post" action="/post">
                     {{ csrf_field() }}
                     <div class="margin-b-10">
-                        <input type="text" class="form-control" placeholder="Name" name="name" required>
+                        <input type="text" class="form-control" placeholder="Name" name="name">
                     </div>
                     <div class="margin-b-10">
-                        <input type="text" class="form-control" placeholder="Email" name="email" required>
+                        <input type="text" class="form-control" placeholder="Email" name="email">
                     </div>
                     <div class="margin-b-10">
-                        <input type="text" class="form-control" placeholder="Phone" name="phone" required>
+                        <input type="text" class="form-control" placeholder="Phone" name="phone">
                     </div>
                     <div class="margin-b-20">
-                        <textarea class="form-control" rows="5" placeholder="Message" name="text" required></textarea>
+                        <textarea class="form-control" rows="5" placeholder="Message" name="text"></textarea>
                     </div>
                     <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                    @if(count($errors))
+                    <div class='form-group'>
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach($errors->all() as $error)
+                                <li><strong>Error!</strong> {{$error}}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                    @endif
+
                 </form>
+
+
             </div>
         </div>
         <!--// end row -->

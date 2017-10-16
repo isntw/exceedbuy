@@ -6,10 +6,21 @@ use Illuminate\Http\Request;
 use App\Message;
 
 class MessageController extends Controller {
-
-    public function store() {
-        Message::create(request(['name','email','phone','text']));
+    
+    
+    public function index() {
         
+    }
+    public function store() {
+        $this->validate(request(), [
+        'name' => 'required',
+        'email' => 'required',
+        'phone' => 'required',
+        'text' => 'required',
+        ]);
+
+        Message::create(request(['name', 'email', 'phone', 'text']));
+
         return redirect('/');
     }
 
