@@ -1,7 +1,7 @@
-@extends('index')
+@extends('layouts.app')
 
-@section('admin')
-<div class="container" style='margin-top: 100px;'>
+@section('content')
+<div class="container">
     <div class="row">
 
         @foreach($messages as $message)

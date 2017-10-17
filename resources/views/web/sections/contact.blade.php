@@ -53,21 +53,26 @@
 
         <div class="row ">
             <div class="col-md-5 col-sm-7">
-                <form method="post" action="/post">
+                <form method="post" action="/post" name='contact_form'>
                     {{ csrf_field() }}
                     <div class="margin-b-10">
-                        <input type="text" class="form-control" placeholder="Name" name="name">
+                        <input type="text" class="form-control" placeholder="Name" name="name" >
+                        <span class="text-danger" id="name"></span>
                     </div>
                     <div class="margin-b-10">
-                        <input type="text" class="form-control" placeholder="Email" name="email">
+                        <input type="text" class="form-control" placeholder="Email" name="email" >
+                        <span class="text-danger" id="email"></span>
                     </div>
                     <div class="margin-b-10">
                         <input type="text" class="form-control" placeholder="Phone" name="phone">
+                        <span class="text-danger" id="phone"></span>
                     </div>
                     <div class="margin-b-20">
                         <textarea class="form-control" rows="5" placeholder="Message" name="text"></textarea>
+                        <span class="text-danger" id="text"></span>
                     </div>
-                    <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="Submit">
+
                     @if(count($errors))
                     <div class='form-group'>
                         <div class="alert alert-danger">
@@ -81,8 +86,6 @@
                     @endif
 
                 </form>
-
-
             </div>
         </div>
         <!--// end row -->

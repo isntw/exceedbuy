@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\Message;
-class AdminController extends Controller
-{
+
+class MessageController extends Controller {
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth');
     }
 
@@ -21,9 +22,9 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $messages = Message::all();      
-        return view('layouts.admin', compact('messages'));
+    public function index() {
+        $messages = Message::all();
+        return view('admin.index', compact('messages'));
     }
+
 }

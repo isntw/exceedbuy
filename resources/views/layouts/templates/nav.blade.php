@@ -12,7 +12,7 @@
 
                 <!-- Logo -->
                 <div class="navbar-logo">
-                    <a class="navbar-logo-wrap smooth-scroll" href="<?php echo Config::get('URL'); ?>">
+                    <a class="navbar-logo-wrap smooth-scroll" href="{{config('app.url')}}">
                         <h2>{{ config('app.name') }}</h2> 
                     </a>
                 </div>
@@ -65,21 +65,33 @@
                         </li>
                         <!-- End Contact -->
                         @else
+                        <!-- Messages -->
+                        <li class="nav-item">
+                            <a class="nav-item-child smooth-scroll" href="">
+                                Messages
+                            </a>
+                        </li>    
+                        <!-- Settings -->
+                        <li class="nav-item">
+                            <a class="nav-item-child smooth-scroll" href="/admin/settings">
+                                Settings
+                            </a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-item-child smooth-scroll" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                           document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
+                        <li class="nav-item">
+                            <a class="nav-item-child smooth-scroll" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-                            </li>
-                          @endguest
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+                        @endguest
 
-                        </ul>
+                    </ul>
                     </ul>
                 </div>
             </div>
