@@ -1,0 +1,40 @@
+[18-Oct-2017 16:58:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#5 /home/exceedbuy/public_h in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[18-Oct-2017 16:58:13 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#5 /home/exceedbuy/public_h in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[18-Oct-2017 16:58:13 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#5 /home/exceedbuy/public_h in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[18-Oct-2017 16:58:15 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#5 /home/exceedbuy/public_h in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[18-Oct-2017 16:58:44 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(721): Illuminate\Container\Container->make('App\\Http\\Kernel', Array)
+#4 /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make('App\\Http\\Kernel', Array)
+#5 /home/exceedbuy/public_h in /home/exceedbuy/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752

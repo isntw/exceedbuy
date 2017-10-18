@@ -1,0 +1,5 @@
+[17-Oct-2017 20:44:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home/exceedbuy/public_html/bootstrap/app.php:14
+Stack trace:
+#0 /home/exceedbuy/public_html/artisan(20): require_once()
+#1 {main}
+  thrown in /home/exceedbuy/public_html/bootstrap/app.php on line 14
