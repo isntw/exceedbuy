@@ -4,33 +4,11 @@
         <div class="row">
             <!-- Contact List -->
             <div class="col-sm-4 sm-margin-b-50">
-                <h4><a href="#">New York</a> <span class="text-uppercase margin-l-20">Head Office</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
+                <h4><a href="#">{{$settings->location}}</a> <span class="text-uppercase margin-l-20">Head Office</span></h4>
+                <p>{{$settings->description}}</p>
                 <ul class="list-unstyled contact-list">
-                    <li><i class="margin-r-10 color-base icon-call-out"></i> 1 012 3456 7890</li>
-                    <li><i class="margin-r-10 color-base icon-envelope"></i> hq@acidus.com</li>
-                </ul>
-            </div>
-            <!-- End Contact List -->
-
-            <!-- Contact List -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <h4><a href="#">London</a> <span class="text-uppercase margin-l-20">Operation</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <ul class="list-unstyled contact-list">
-                    <li><i class="margin-r-10 color-base icon-call-out"></i> 44 77 3456 7890</li>
-                    <li><i class="margin-r-10 color-base icon-envelope"></i> operation@acidus.com</li>
-                </ul>
-            </div>
-            <!-- End Contact List -->
-
-            <!-- Contact List -->
-            <div class="col-sm-4 sm-margin-b-50">
-                <h4><a href="#">Singapore</a> <span class="text-uppercase margin-l-20">Finance</span></h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                <ul class="list-unstyled contact-list">
-                    <li><i class="margin-r-10 color-base icon-call-out"></i> 50 012 456 7890</li>
-                    <li><i class="margin-r-10 color-base icon-envelope"></i> finance@acidus.com</li>
+                    <li><i class="margin-r-10 color-base icon-call-out"></i> {{$settings->phone}}</li>
+                    <li><i class="margin-r-10 color-base icon-envelope"></i> {{$settings->email}}</li>
                 </ul>
             </div>
             <!-- End Contact List -->

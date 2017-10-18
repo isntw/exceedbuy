@@ -27,7 +27,7 @@
                         <!-- Work -->
                         <li class="nav-item">
                             <a class="nav-item-child smooth-scroll" href="#work-container">
-                                Work
+                                HOME
                             </a>
                         </li>
                         <!-- End Work -->
@@ -35,7 +35,7 @@
                         <!-- Features -->
                         <li class="nav-item">
                             <a class="nav-item-child smooth-scroll" href="#features">
-                                Features
+                                ABOUT US
                             </a>
                         </li>
                         <!-- End Features -->
@@ -43,17 +43,17 @@
                         <!-- Clients -->
                         <li class="nav-item">
                             <a class="nav-item-child smooth-scroll" href="#clients">
-                                Clients
+                                PRODUCTS
                             </a>
                         </li>
                         <!-- Clients -->
 
                         <!-- Team -->
-                        <li class="nav-item">
-                            <a class="nav-item-child smooth-scroll" href="#team">
-                                Team
-                            </a>
-                        </li>
+                        <!--                        <li class="nav-item">
+                                                    <a class="nav-item-child smooth-scroll" href="#team">
+                                                        Team
+                                                    </a>
+                                                </li>-->
                         <!-- End Team -->
 
 

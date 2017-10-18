@@ -5,10 +5,13 @@
     </head>
     <body>
         @include('layouts.templates.nav')
-        
+
         @yield('content')
         <!--@yield('layouts.web.page_content')-->
-        
+       
         @include('layouts.templates.footer')
+        
+
+
     </body>
 </html>

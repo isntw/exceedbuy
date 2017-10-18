@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Settings;
 
 class SettingsController extends Controller {
 
@@ -12,7 +13,13 @@ class SettingsController extends Controller {
     }
 
     public function index() {
-        return view('admin.pages.settings');
+
+        $settings = Settings::first();
+        return view('admin.pages.settings', compact('settings'));
+    }
+
+    public function update() {
+        
     }
 
 }

@@ -15,6 +15,10 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('location');
+            $table->text('description');
             $table->timestamps();
         });
     }

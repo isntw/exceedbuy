@@ -15,7 +15,7 @@ Route::get('/', 'IndexController@index');
 Route::post('/post', 'MessageController@store');
 Route::get('/admin', 'admin\AdminController@index');
 Route::get('/admin/message', 'admin\MessageController@index');
-Route::get('/admin/settings', 'admin\SettingsController@index');
+Route::get('/admin/settings', 'admin\SettingsController@index')->name('admin.settings');
 
 
 
