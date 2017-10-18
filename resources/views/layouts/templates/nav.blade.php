@@ -67,13 +67,13 @@
                         @else
                         <!-- Messages -->
                         <li class="nav-item">
-                            <a class="nav-item-child smooth-scroll" href="{{cdurl("/admin/message")}}">
+                            <a class="nav-item-child smooth-scroll" href="{{url("/admin/message")}}">
                                 Messages
                             </a>
                         </li>    
                         <!-- Settings -->
                         <li class="nav-item">
-                            <a class="nav-item-child smooth-scroll" href="{{cdurl("/admin/settings")}}">
+                            <a class="nav-item-child smooth-scroll" href="{{url("/admin/settings")}}">
                                 Settings
                             </a>
                         </li>
